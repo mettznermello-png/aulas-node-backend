@@ -6,3 +6,13 @@ Branch nomenclatura:
 feat - Criar algo novo no projeto
 fix - Consertar
 doc - Documentação
+
+
+orther wise
+
+test - for test
+shor - ?
+?
+?
+?
+?
