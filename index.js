@@ -16,19 +16,22 @@ const app = express()
 //Inicia o servodor Express na  porta 3000 e define uma função de retorno de chamada
 app.get("/api/pessoa/:id" , (req, res) => {
     const id = req.params.id
-
-    const pessoa = bancoDeDados.find(it => it.id == id)
-
-    res.send({ pessoa: pessoa})
+    const pessoa = bancoDeDados.find(it => it.id == id )
+    if (!pessoa) {
+        res.send({ message: "Pessoa não encontrada"})
+        return
+    }
+    res.send({ pessoa })
 })
-
 app.get("/api/pessoa", (req, res) => {
     //const nome = req.query.name
     //const id = req.query.name
     const { id, name } = req.query
+    if(!id || !name) {
+        res.send({ message: "Favor informar id e name"})
+        return
+    }
     bancoDeDados.push({id, name})
-    console.log(bancoDeDados)
-
     res.send({ massege: "Pessoa criada com susseco"})
 })
 
