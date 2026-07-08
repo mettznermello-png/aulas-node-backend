@@ -1,17 +1,17 @@
 {
-  "name": "aula-exemplo-backend-tec-2026",
+  "name": "aulas-node-backend",
   "version": "0.0.1",
   "description": "Qualquer coisa",
-  "homepage": "https://github.com/renanponick/aula-exemplo-backend-tec-2026#readme",
+  "homepage": "https://github.com/mettznermello-png/aulas-node-backend#readme",
   "bugs": {
-    "url": "https://github.com/renanponick/aula-exemplo-backend-tec-2026/issues"
+    "url": "https://github.com/mettznermello-png/aulas-node-backend"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/renanponick/aula-exemplo-backend-tec-2026.git"
+    "url": "git+https://github.com/mettznermello-png/aulas-node-backend.git"
   },
   "license": "ISC",
-  "author": "Renan Ponick",
+  "author": "Abel Mettzner",
   "type": "module",
   "main": "index.js",
   "scripts": {
