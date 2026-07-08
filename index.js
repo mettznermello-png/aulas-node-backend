@@ -18,10 +18,10 @@ app.get("/api/pessoa/:id" , (req, res) => {
     const id = req.params.id
     const pessoa = bancoDeDados.find(it => it.id == id )
     if (!pessoa) {
-        res.send({ message: "Pessoa não encontrada"})
+        res.status(404).send({ message: "Pessoa não encontrada"})
         return
     }
-    res.send({ pessoa })
+    res.send({ pessoa: "Pessoa encontrada com sucesso" })
 })
 app.get("/api/pessoa", (req, res) => {
     //const nome = req.query.name
@@ -33,6 +33,15 @@ app.get("/api/pessoa", (req, res) => {
     }
     bancoDeDados.push({id, name})
     res.send({ massege: "Pessoa criada com susseco"})
+})
+
+app.get("/api/pessoa/alterar/:id", (req, req) => {
+    let id = req.params
+    let name = 
+})
+
+app.get("/api/pessoa/deletar/:id", (req, req) => {
+    const id = 
 })
 
 app.listen(3000, () => {
